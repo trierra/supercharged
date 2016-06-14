@@ -3,18 +3,20 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 46;
+	objectVersion = 47;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		2045CC701D00FC2C0058AE17 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2045CC6F1D00FC2C0058AE17 /* AppDelegate.swift */; };
-		2045CC721D00FC2C0058AE17 /* RootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2045CC711D00FC2C0058AE17 /* RootViewController.swift */; };
-		2045CC741D00FC2C0058AE17 /* DataViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2045CC731D00FC2C0058AE17 /* DataViewController.swift */; };
-		2045CC761D00FC2C0058AE17 /* ModelController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2045CC751D00FC2C0058AE17 /* ModelController.swift */; };
 		2045CC791D00FC2C0058AE17 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2045CC771D00FC2C0058AE17 /* Main.storyboard */; };
 		2045CC7B1D00FC2C0058AE17 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2045CC7A1D00FC2C0058AE17 /* Assets.xcassets */; };
 		2045CC7E1D00FC2C0058AE17 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2045CC7C1D00FC2C0058AE17 /* LaunchScreen.storyboard */; };
 		2045CC891D00FC2C0058AE17 /* SCWorkoutTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2045CC881D00FC2C0058AE17 /* SCWorkoutTests.swift */; };
+		20F333541D0F4830000B54ED /* StageDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20F333531D0F4830000B54ED /* StageDetailViewController.swift */; };
+		20FDAE101D063A4C00280500 /* StagesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20FDAE0F1D063A4C00280500 /* StagesTableViewController.swift */; };
+		20FDAE121D063AFB00280500 /* StagesTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20FDAE111D063AFB00280500 /* StagesTableViewCell.swift */; };
+		20FDAE161D0647D800280500 /* WorkoutTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20FDAE151D0647D800280500 /* WorkoutTableViewController.swift */; };
+		20FDAE181D06488500280500 /* WorkoutTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20FDAE171D06488500280500 /* WorkoutTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -30,9 +32,6 @@
 /* Begin PBXFileReference section */
 		2045CC6C1D00FC2C0058AE17 /* SCWorkout.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SCWorkout.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2045CC6F1D00FC2C0058AE17 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		2045CC711D00FC2C0058AE17 /* RootViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootViewController.swift; sourceTree = "<group>"; };
-		2045CC731D00FC2C0058AE17 /* DataViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataViewController.swift; sourceTree = "<group>"; };
-		2045CC751D00FC2C0058AE17 /* ModelController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelController.swift; sourceTree = "<group>"; };
 		2045CC781D00FC2C0058AE17 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		2045CC7A1D00FC2C0058AE17 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2045CC7D1D00FC2C0058AE17 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -40,6 +39,11 @@
 		2045CC841D00FC2C0058AE17 /* SCWorkoutTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SCWorkoutTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2045CC881D00FC2C0058AE17 /* SCWorkoutTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SCWorkoutTests.swift; sourceTree = "<group>"; };
 		2045CC8A1D00FC2C0058AE17 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		20F333531D0F4830000B54ED /* StageDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StageDetailViewController.swift; sourceTree = "<group>"; };
+		20FDAE0F1D063A4C00280500 /* StagesTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StagesTableViewController.swift; sourceTree = "<group>"; };
+		20FDAE111D063AFB00280500 /* StagesTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StagesTableViewCell.swift; sourceTree = "<group>"; };
+		20FDAE151D0647D800280500 /* WorkoutTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WorkoutTableViewController.swift; sourceTree = "<group>"; };
+		20FDAE171D06488500280500 /* WorkoutTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = WorkoutTableViewCell.swift; path = ../../WorkoutTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,10 +85,12 @@
 		2045CC6E1D00FC2C0058AE17 /* SCWorkout */ = {
 			isa = PBXGroup;
 			children = (
+				2045CC971D01001A0058AE17 /* Helpers */,
+				2045CC961D0100110058AE17 /* Stores */,
+				2045CC951D0100040058AE17 /* Controllers */,
+				2045CC941D00FFFD0058AE17 /* Views */,
+				2045CC931D00FFEF0058AE17 /* Models */,
 				2045CC6F1D00FC2C0058AE17 /* AppDelegate.swift */,
-				2045CC711D00FC2C0058AE17 /* RootViewController.swift */,
-				2045CC731D00FC2C0058AE17 /* DataViewController.swift */,
-				2045CC751D00FC2C0058AE17 /* ModelController.swift */,
 				2045CC771D00FC2C0058AE17 /* Main.storyboard */,
 				2045CC7A1D00FC2C0058AE17 /* Assets.xcassets */,
 				2045CC7C1D00FC2C0058AE17 /* LaunchScreen.storyboard */,
@@ -100,6 +106,62 @@
 				2045CC8A1D00FC2C0058AE17 /* Info.plist */,
 			);
 			path = SCWorkoutTests;
+			sourceTree = "<group>";
+		};
+		2045CC931D00FFEF0058AE17 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		2045CC941D00FFFD0058AE17 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		2045CC951D0100040058AE17 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				20FDAE191D0648A900280500 /* Workout */,
+				20FDAE1A1D0648B100280500 /* Stage */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		2045CC961D0100110058AE17 /* Stores */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Stores;
+			sourceTree = "<group>";
+		};
+		2045CC971D01001A0058AE17 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		20FDAE191D0648A900280500 /* Workout */ = {
+			isa = PBXGroup;
+			children = (
+				20FDAE171D06488500280500 /* WorkoutTableViewCell.swift */,
+				20FDAE151D0647D800280500 /* WorkoutTableViewController.swift */,
+			);
+			name = Workout;
+			sourceTree = "<group>";
+		};
+		20FDAE1A1D0648B100280500 /* Stage */ = {
+			isa = PBXGroup;
+			children = (
+				20FDAE0F1D063A4C00280500 /* StagesTableViewController.swift */,
+				20FDAE111D063AFB00280500 /* StagesTableViewCell.swift */,
+				20F333531D0F4830000B54ED /* StageDetailViewController.swift */,
+			);
+			name = Stage;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -146,6 +208,7 @@
 		2045CC641D00FC2B0058AE17 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				CLASSPREFIX = "";
 				LastSwiftUpdateCheck = 0730;
 				LastUpgradeCheck = 0730;
 				ORGANIZATIONNAME = "Oksana Chuiko";
@@ -162,7 +225,7 @@
 				};
 			};
 			buildConfigurationList = 2045CC671D00FC2B0058AE17 /* Build configuration list for PBXProject "SCWorkout" */;
-			compatibilityVersion = "Xcode 3.2";
+			compatibilityVersion = "Xcode 6.3";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -205,10 +268,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2045CC721D00FC2C0058AE17 /* RootViewController.swift in Sources */,
-				2045CC761D00FC2C0058AE17 /* ModelController.swift in Sources */,
-				2045CC741D00FC2C0058AE17 /* DataViewController.swift in Sources */,
+				20F333541D0F4830000B54ED /* StageDetailViewController.swift in Sources */,
+				20FDAE161D0647D800280500 /* WorkoutTableViewController.swift in Sources */,
+				20FDAE181D06488500280500 /* WorkoutTableViewCell.swift in Sources */,
+				20FDAE101D063A4C00280500 /* StagesTableViewController.swift in Sources */,
 				2045CC701D00FC2C0058AE17 /* AppDelegate.swift in Sources */,
+				20FDAE121D063AFB00280500 /* StagesTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -339,6 +404,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = SCWorkout/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = me.trierra.SCWorkout;
@@ -350,6 +416,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = SCWorkout/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = me.trierra.SCWorkout;
@@ -400,6 +467,7 @@
 				2045CC8F1D00FC2C0058AE17 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		2045CC901D00FC2C0058AE17 /* Build configuration list for PBXNativeTarget "SCWorkoutTests" */ = {
 			isa = XCConfigurationList;
@@ -408,6 +476,7 @@
 				2045CC921D00FC2C0058AE17 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

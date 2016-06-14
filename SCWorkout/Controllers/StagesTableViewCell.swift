@@ -10,6 +10,8 @@ import UIKit
 
 class StagesTableViewCell: UITableViewCell {
 
+    @IBOutlet weak var stageLabel: UILabel!
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
