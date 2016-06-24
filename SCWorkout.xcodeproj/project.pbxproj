@@ -12,6 +12,8 @@
 		2045CC7B1D00FC2C0058AE17 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2045CC7A1D00FC2C0058AE17 /* Assets.xcassets */; };
 		2045CC7E1D00FC2C0058AE17 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2045CC7C1D00FC2C0058AE17 /* LaunchScreen.storyboard */; };
 		2045CC891D00FC2C0058AE17 /* SCWorkoutTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2045CC881D00FC2C0058AE17 /* SCWorkoutTests.swift */; };
+		20C148F61D1B4A5F0027578E /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20C148F51D1B4A5F0027578E /* TabBarController.swift */; };
+		20C148FC1D1C87B30027578E /* CellDescriptor.plist in Resources */ = {isa = PBXBuildFile; fileRef = 20C148FB1D1C87B30027578E /* CellDescriptor.plist */; };
 		20F333541D0F4830000B54ED /* StageDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20F333531D0F4830000B54ED /* StageDetailViewController.swift */; };
 		20FDAE101D063A4C00280500 /* StagesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20FDAE0F1D063A4C00280500 /* StagesTableViewController.swift */; };
 		20FDAE121D063AFB00280500 /* StagesTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20FDAE111D063AFB00280500 /* StagesTableViewCell.swift */; };
@@ -39,6 +41,8 @@
 		2045CC841D00FC2C0058AE17 /* SCWorkoutTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SCWorkoutTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2045CC881D00FC2C0058AE17 /* SCWorkoutTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SCWorkoutTests.swift; sourceTree = "<group>"; };
 		2045CC8A1D00FC2C0058AE17 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		20C148F51D1B4A5F0027578E /* TabBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
+		20C148FB1D1C87B30027578E /* CellDescriptor.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = CellDescriptor.plist; sourceTree = "<group>"; };
 		20F333531D0F4830000B54ED /* StageDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StageDetailViewController.swift; sourceTree = "<group>"; };
 		20FDAE0F1D063A4C00280500 /* StagesTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StagesTableViewController.swift; sourceTree = "<group>"; };
 		20FDAE111D063AFB00280500 /* StagesTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StagesTableViewCell.swift; sourceTree = "<group>"; };
@@ -125,6 +129,7 @@
 		2045CC951D0100040058AE17 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				20C148F51D1B4A5F0027578E /* TabBarController.swift */,
 				20FDAE191D0648A900280500 /* Workout */,
 				20FDAE1A1D0648B100280500 /* Stage */,
 			);
@@ -157,6 +162,7 @@
 		20FDAE1A1D0648B100280500 /* Stage */ = {
 			isa = PBXGroup;
 			children = (
+				20C148FB1D1C87B30027578E /* CellDescriptor.plist */,
 				20FDAE0F1D063A4C00280500 /* StagesTableViewController.swift */,
 				20FDAE111D063AFB00280500 /* StagesTableViewCell.swift */,
 				20F333531D0F4830000B54ED /* StageDetailViewController.swift */,
@@ -249,6 +255,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2045CC7E1D00FC2C0058AE17 /* LaunchScreen.storyboard in Resources */,
+				20C148FC1D1C87B30027578E /* CellDescriptor.plist in Resources */,
 				2045CC7B1D00FC2C0058AE17 /* Assets.xcassets in Resources */,
 				2045CC791D00FC2C0058AE17 /* Main.storyboard in Resources */,
 			);
@@ -272,6 +279,7 @@
 				20FDAE161D0647D800280500 /* WorkoutTableViewController.swift in Sources */,
 				20FDAE181D06488500280500 /* WorkoutTableViewCell.swift in Sources */,
 				20FDAE101D063A4C00280500 /* StagesTableViewController.swift in Sources */,
+				20C148F61D1B4A5F0027578E /* TabBarController.swift in Sources */,
 				2045CC701D00FC2C0058AE17 /* AppDelegate.swift in Sources */,
 				20FDAE121D063AFB00280500 /* StagesTableViewCell.swift in Sources */,
 			);

@@ -1,15 +1,14 @@
 //
-//  StageDetailViewController.swift
+//  TabBarController.swift
 //  SCWorkout
 //
-//  Created by Oksana Chuiko on 6/13/16.
+//  Created by Oksana Chuiko on 6/22/16.
 //  Copyright © 2016 Oksana Chuiko. All rights reserved.
 //
 
 import UIKit
 
-class StageDetailViewController: UIViewController {
-
+class TabBarController: UITabBarController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -19,16 +18,10 @@ class StageDetailViewController: UIViewController {
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
-
         // Dispose of any resources that can be recreated.
     }
     
 
-    @IBAction func startStage(sender: UIBarButtonItem) {
-        print("start")
-        tabBarController?.selectedIndex = 1
-        //TODO: Add stage to nsuserdefaults
-    }
     /*
     // MARK: - Navigation
 

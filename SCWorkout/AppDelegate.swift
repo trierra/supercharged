@@ -15,7 +15,16 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
-        // Override point for customization after application launch.
+
+//        // Override point for customization after application launch.
+//        if let tabBarController = window?.rootViewController as? UITabBarController {
+//            let storyboard = UIStoryboard(name: "Main", bundle: nil)
+//
+//            let first = storyboard.instantiateViewControllerWithIdentifier("StagesTableViewController") as! StagesTableViewController
+//            let second = storyboard.instantiateViewControllerWithIdentifier("WorkoutTableViewController") as! WorkoutTableViewController
+////
+//            tabBarController.viewControllers = [first, second]
+//        }
         return true
     }
 
