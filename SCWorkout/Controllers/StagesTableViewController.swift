@@ -23,8 +23,6 @@ class StagesTableViewController: UITableViewController {
 
     override func viewWillAppear(animated: Bool) {
         super.viewWillAppear(animated)
-//        configureTableView()
-
         loadCellDescriptors()
     }
 
@@ -35,7 +33,6 @@ class StagesTableViewController: UITableViewController {
     // MARK: - Table view data source
 
     override func numberOfSectionsInTableView(tableView: UITableView) -> Int {
-        // #warning Incomplete implementation, return the number of sections
         if cellDescriptors != nil {
             return cellDescriptors.count
         }
@@ -46,9 +43,7 @@ class StagesTableViewController: UITableViewController {
     }
 
     override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        // #warning Incomplete implementation, return the number of rows
         return visibleRowsPerSection[section].count
-
     }
 
 
@@ -60,28 +55,7 @@ class StagesTableViewController: UITableViewController {
             if let primaryTitle = currentCellDescriptor["primaryTitle"] {
                 cell.textLabel?.text = primaryTitle as? String
             }
-
-            if let secondaryTitle = currentCellDescriptor["secondaryTitle"] {
-                cell.detailTextLabel?.text = secondaryTitle as? String
-            }
         }
-//        else if currentCellDescriptor["cellIdentifier"] as! String == "idCellTextfield" {
-//            cell.textField.placeholder = currentCellDescriptor["primaryTitle"] as? String
-//        }
-//        else if currentCellDescriptor["cellIdentifier"] as! String == "idCellSwitch" {
-//            cell.lblSwitchLabel.text = currentCellDescriptor["primaryTitle"] as? String
-//
-//            let value = currentCellDescriptor["value"] as? String
-//            cell.swMaritalStatus.on = (value == "true") ? true : false
-//        }
-//        else if currentCellDescriptor["cellIdentifier"] as! String == "idCellValuePicker" {
-//            cell.textLabel?.text = currentCellDescriptor["primaryTitle"] as? String
-//        }
-//        else if currentCellDescriptor["cellIdentifier"] as! String == "idCellSlider" {
-//            let value = currentCellDescriptor["value"] as! String
-//            cell.slExperienceLevel.value = (value as NSString).floatValue
-//        }
-
         return cell
     }
 
@@ -99,18 +73,7 @@ class StagesTableViewController: UITableViewController {
     }
 
     override func tableView(tableView: UITableView, heightForRowAtIndexPath indexPath: NSIndexPath) -> CGFloat {
-//        let currentCellDescriptor = getCellDescriptorForIndexPath(indexPath)
-//
-//        switch currentCellDescriptor["cellIdentifier"] as! String {
-//        case "idCellNormal":
-//            return 60.0
-//
-//        case "idCellDatePicker":
-//            return 270.0
-//            
-//        default:
-            return 44.0
-//        }
+        return 44.0
     }
 
     override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
@@ -134,11 +97,10 @@ class StagesTableViewController: UITableViewController {
     }
 
 
-    //MARK: Cell expanding implementation 
+    //MARK: Cell expanding implementation
 
     func loadCellDescriptors() {
-                if let path = NSBundle.mainBundle().pathForResource("StageTableCellDescriptor", ofType: "plist") {
-//            if let path = NSBundle.mainBundle().pathForResource("CellDescriptor", ofType: "plist") {
+        if let path = NSBundle.mainBundle().pathForResource("StageTableCellDescriptor", ofType: "plist") {
 
             cellDescriptors = NSMutableArray(contentsOfFile: path)
             getIndicesOfVisibleRows()
@@ -167,5 +129,5 @@ class StagesTableViewController: UITableViewController {
         let cellDescriptor = cellDescriptors[indexPath.section][indexOfVisibleRow] as! [String: AnyObject]
         return cellDescriptor
     }
-
+    
 }
