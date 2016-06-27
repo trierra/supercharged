@@ -124,7 +124,6 @@ class StagesTableViewController: UITableViewController {
 
             cellDescriptors[indexPath.section][indexOfTappedRow].setValue(shouldExpandAndShowSubRows, forKey: "isExpanded")
 
-
             for i in (indexOfTappedRow + 1)...(indexOfTappedRow + (cellDescriptors[indexPath.section][indexOfTappedRow]["additionalRows"] as! Int)) {
                 cellDescriptors[indexPath.section][i].setValue(shouldExpandAndShowSubRows, forKey: "isVisible")
             }
@@ -138,7 +137,9 @@ class StagesTableViewController: UITableViewController {
     //MARK: Cell expanding implementation 
 
     func loadCellDescriptors() {
-        if let path = NSBundle.mainBundle().pathForResource("CellDescriptor", ofType: "plist") {
+                if let path = NSBundle.mainBundle().pathForResource("StageTableCellDescriptor", ofType: "plist") {
+//            if let path = NSBundle.mainBundle().pathForResource("CellDescriptor", ofType: "plist") {
+
             cellDescriptors = NSMutableArray(contentsOfFile: path)
             getIndicesOfVisibleRows()
             tableView.reloadData()

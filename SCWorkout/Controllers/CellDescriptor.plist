@@ -13,7 +13,7 @@
 			<key>value</key>
 			<string></string>
 			<key>primaryTitle</key>
-			<string></string>
+			<string>1</string>
 			<key>secondaryTitle</key>
 			<string>Fullname</string>
 			<key>cellIdentifier</key>
@@ -67,7 +67,7 @@
 			<key>value</key>
 			<string></string>
 			<key>primaryTitle</key>
-			<string></string>
+			<string>2</string>
 			<key>secondaryTitle</key>
 			<string>Date of Birth</string>
 			<key>cellIdentifier</key>
@@ -85,7 +85,7 @@
 			<key>value</key>
 			<string></string>
 			<key>primaryTitle</key>
-			<string></string>
+			<string>for 2</string>
 			<key>secondaryTitle</key>
 			<string></string>
 			<key>cellIdentifier</key>
