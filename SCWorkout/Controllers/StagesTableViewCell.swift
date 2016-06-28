@@ -12,6 +12,8 @@ class StagesTableViewCell: UITableViewCell {
 
     @IBOutlet weak var stageLabel: UILabel!
     
+    @IBOutlet weak var startStageButton: UIButton!
+
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
@@ -23,4 +25,4 @@ class StagesTableViewCell: UITableViewCell {
         // Configure the view for the selected state
     }
 
-}
+    }

@@ -8,6 +8,12 @@
 
 import UIKit
 
+enum NSUserDefaultsKeys : String{
+    case Stage = "stage"
+    case ProgramNumberInStage = "program"
+    case WorkoutNumberInProgram = "workout"
+}
+
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 

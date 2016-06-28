@@ -4,6 +4,8 @@
 <array>
 	<array>
 		<dict>
+			<key>stageAndProgramNumber</key>
+			<integer>11</integer>
 			<key>additionalRows</key>
 			<integer>1</integer>
 			<key>primaryTitle</key>
@@ -31,9 +33,11 @@
 			<key>primaryTitle</key>
 			<string>Firstname</string>
 			<key>cellIdentifier</key>
-			<string>StageCell</string>
+			<string>StageDetailCell</string>
 		</dict>
 		<dict>
+			<key>stageAndProgramNumber</key>
+			<integer>12</integer>
 			<key>additionalRows</key>
 			<integer>1</integer>
 			<key>primaryTitle</key>
@@ -61,9 +65,11 @@
 			<key>primaryTitle</key>
 			<string>Firstname</string>
 			<key>cellIdentifier</key>
-			<string>StageCell</string>
+			<string>StageDetailCell</string>
 		</dict>
 		<dict>
+			<key>stageAndProgramNumber</key>
+			<integer>13</integer>
 			<key>additionalRows</key>
 			<integer>1</integer>
 			<key>primaryTitle</key>
@@ -91,9 +97,11 @@
 			<key>primaryTitle</key>
 			<string>Firstname</string>
 			<key>cellIdentifier</key>
-			<string>StageCell</string>
+			<string>StageDetailCell</string>
 		</dict>
 		<dict>
+			<key>stageAndProgramNumber</key>
+			<integer>14</integer>
 			<key>additionalRows</key>
 			<integer>1</integer>
 			<key>primaryTitle</key>
@@ -121,11 +129,13 @@
 			<key>primaryTitle</key>
 			<string>Firstname</string>
 			<key>cellIdentifier</key>
-			<string>StageCell</string>
+			<string>StageDetailCell</string>
 		</dict>
 	</array>
 	<array>
 		<dict>
+			<key>stageAndProgramNumber</key>
+			<integer>21</integer>
 			<key>additionalRows</key>
 			<integer>1</integer>
 			<key>primaryTitle</key>
@@ -153,9 +163,11 @@
 			<key>primaryTitle</key>
 			<string>Firstname</string>
 			<key>cellIdentifier</key>
-			<string>StageCell</string>
+			<string>StageDetailCell</string>
 		</dict>
 		<dict>
+			<key>stageAndProgramNumber</key>
+			<integer>22</integer>
 			<key>additionalRows</key>
 			<integer>1</integer>
 			<key>primaryTitle</key>
@@ -183,9 +195,11 @@
 			<key>primaryTitle</key>
 			<string>Firstname</string>
 			<key>cellIdentifier</key>
-			<string>StageCell</string>
+			<string>StageDetailCell</string>
 		</dict>
 		<dict>
+			<key>stageAndProgramNumber</key>
+			<integer>23</integer>
 			<key>additionalRows</key>
 			<integer>1</integer>
 			<key>primaryTitle</key>
@@ -213,11 +227,13 @@
 			<key>primaryTitle</key>
 			<string>Firstname</string>
 			<key>cellIdentifier</key>
-			<string>StageCell</string>
+			<string>StageDetailCell</string>
 		</dict>
 	</array>
 	<array>
 		<dict>
+			<key>stageAndProgramNumber</key>
+			<integer>31</integer>
 			<key>additionalRows</key>
 			<integer>1</integer>
 			<key>primaryTitle</key>
@@ -245,9 +261,11 @@
 			<key>primaryTitle</key>
 			<string>Firstname</string>
 			<key>cellIdentifier</key>
-			<string>StageCell</string>
+			<string>StageDetailCell</string>
 		</dict>
 		<dict>
+			<key>stageAndProgramNumber</key>
+			<integer>32</integer>
 			<key>additionalRows</key>
 			<integer>1</integer>
 			<key>primaryTitle</key>
@@ -275,9 +293,11 @@
 			<key>primaryTitle</key>
 			<string>Firstname</string>
 			<key>cellIdentifier</key>
-			<string>StageCell</string>
+			<string>StageDetailCell</string>
 		</dict>
 		<dict>
+			<key>stageAndProgramNumber</key>
+			<integer>33</integer>
 			<key>additionalRows</key>
 			<integer>1</integer>
 			<key>primaryTitle</key>
@@ -305,7 +325,7 @@
 			<key>primaryTitle</key>
 			<string>Firstname</string>
 			<key>cellIdentifier</key>
-			<string>StageCell</string>
+			<string>StageDetailCell</string>
 		</dict>
 	</array>
 </array>

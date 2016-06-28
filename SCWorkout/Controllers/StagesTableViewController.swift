@@ -53,7 +53,14 @@ class StagesTableViewController: UITableViewController {
 
         if currentCellDescriptor["cellIdentifier"] as! String == "StageCell" {
             if let primaryTitle = currentCellDescriptor["primaryTitle"] {
-                cell.textLabel?.text = primaryTitle as? String
+                cell.stageLabel.text = primaryTitle as? String
+                cell.startStageButton.tag = currentCellDescriptor["stageAndProgramNumber"] as! Int
+            }
+
+        } else if currentCellDescriptor["cellIdentifier"] as! String == "StageDetailCell" {
+            //TODO: Replace with data according to stage workout
+            if let primaryTitle = currentCellDescriptor["primaryTitle"] {
+                cell.stageLabel.text = primaryTitle as? String
             }
         }
         return cell
@@ -101,7 +108,6 @@ class StagesTableViewController: UITableViewController {
 
     func loadCellDescriptors() {
         if let path = NSBundle.mainBundle().pathForResource("StageTableCellDescriptor", ofType: "plist") {
-
             cellDescriptors = NSMutableArray(contentsOfFile: path)
             getIndicesOfVisibleRows()
             tableView.reloadData()
@@ -129,5 +135,40 @@ class StagesTableViewController: UITableViewController {
         let cellDescriptor = cellDescriptors[indexPath.section][indexOfVisibleRow] as! [String: AnyObject]
         return cellDescriptor
     }
-    
+
+    //MARK: Actions
+
+    @IBAction func startStage(sender: UIButton) {
+        let defaults = NSUserDefaults.standardUserDefaults()
+        print("im working")
+        defaults.setValue("Base", forKey: NSUserDefaultsKeys.Stage.rawValue)
+        defaults.setInteger(2, forKey: NSUserDefaultsKeys.ProgramNumberInStage.rawValue)
+        defaults.setValue("A", forKey: NSUserDefaultsKeys.WorkoutNumberInProgram.rawValue)
+
+        print(defaults.valueForKey(NSUserDefaultsKeys.ProgramNumberInStage.rawValue)!)
+    }
+
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+
+            if (segue.identifier! == "i"){
+            if let cell = sender as? UIButton {
+                print("tag")
+
+                let tag = cell.tag
+                let stage = tag/10
+                let program = tag % 10
+                let defaults = NSUserDefaults.standardUserDefaults()
+
+                defaults.setInteger(stage, forKey: NSUserDefaultsKeys.Stage.rawValue)
+                defaults.setInteger(program, forKey: NSUserDefaultsKeys.ProgramNumberInStage.rawValue)
+                defaults.setValue("A", forKey: NSUserDefaultsKeys.WorkoutNumberInProgram.rawValue)
+                print("stage \(stage), program \(program)")
+
+            }
+            print("haha")
+            let controller = segue.destinationViewController as! WorkoutTableViewController
+            controller.tableView.reloadData()
+        }
+    }
+
 }

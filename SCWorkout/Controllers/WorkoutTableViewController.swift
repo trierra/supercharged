@@ -16,8 +16,15 @@ class WorkoutTableViewController: UITableViewController {
     let base4 = ["Plank4", "Pull-up4", "One leg dead lift4", "Dumbell push4", "One leg squat4", "Ball crunches4", "Cardio4"]
     var rows = 0
 
+    var currentProgram : [String] = []
+
+
+
+
     override func viewDidLoad() {
         super.viewDidLoad()
+
+        currentProgram = loadProgramForStage()
 
        }
 
@@ -39,7 +46,8 @@ class WorkoutTableViewController: UITableViewController {
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCellWithIdentifier("WorkoutCell", forIndexPath: indexPath) as! WorkoutTableViewCell
 
-        cell.label.text = base1[rows]
+        //TODO: change rows in section displaying
+        cell.label.text = currentProgram[rows]
         rows += 1
 
         return cell
@@ -48,5 +56,25 @@ class WorkoutTableViewController: UITableViewController {
     override func tableView(tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
         return "Section \(section)"
     }
-       
+
+
+    private func loadProgramForStage() -> [String] {
+
+        let defaults = NSUserDefaults.standardUserDefaults()
+
+        let programNum = defaults.integerForKey(NSUserDefaultsKeys.ProgramNumberInStage.rawValue)
+
+        switch programNum {
+        case 1:
+            return base1
+        case 2:
+            return base2
+        case 3:
+            return base3
+        case 4:
+            return base4
+        default:
+            return base1
+        }
+    }
 }
