@@ -39,7 +39,6 @@ class StagesTableViewController: UITableViewController {
         else {
             return 0
         }
-
     }
 
     override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -69,13 +68,13 @@ class StagesTableViewController: UITableViewController {
     override func tableView(tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
         switch section {
         case 0:
-            return "Basic"
+            return stages[0]
 
         case 1:
-            return "Hypertrophy"
+            return stages[1]
 
         default:
-            return "Strength & Power"
+            return stages[2]
         }
     }
 
@@ -137,23 +136,10 @@ class StagesTableViewController: UITableViewController {
     }
 
     //MARK: Actions
-
-    @IBAction func startStage(sender: UIButton) {
-        let defaults = NSUserDefaults.standardUserDefaults()
-        print("im working")
-        defaults.setValue("Base", forKey: NSUserDefaultsKeys.Stage.rawValue)
-        defaults.setInteger(2, forKey: NSUserDefaultsKeys.ProgramNumberInStage.rawValue)
-        defaults.setValue("A", forKey: NSUserDefaultsKeys.WorkoutNumberInProgram.rawValue)
-
-        print(defaults.valueForKey(NSUserDefaultsKeys.ProgramNumberInStage.rawValue)!)
-    }
-
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
 
             if (segue.identifier! == "i"){
             if let cell = sender as? UIButton {
-                print("tag")
-
                 let tag = cell.tag
                 let stage = tag/10
                 let program = tag % 10
@@ -162,12 +148,11 @@ class StagesTableViewController: UITableViewController {
                 defaults.setInteger(stage, forKey: NSUserDefaultsKeys.Stage.rawValue)
                 defaults.setInteger(program, forKey: NSUserDefaultsKeys.ProgramNumberInStage.rawValue)
                 defaults.setValue("A", forKey: NSUserDefaultsKeys.WorkoutNumberInProgram.rawValue)
-                print("stage \(stage), program \(program)")
-
             }
-            print("haha")
-            let controller = segue.destinationViewController as! WorkoutTableViewController
-            controller.tableView.reloadData()
+
+//                performSegueWithIdentifier("i", sender: self)
+//            let controller = segue.destinationViewController as! WorkoutTableViewController
+//            controller.tableView.reloadData()
         }
     }
 

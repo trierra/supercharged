@@ -22,18 +22,23 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
 
-//        // Override point for customization after application launch.
-//        if let tabBarController = window?.rootViewController as? UITabBarController {
-//            let storyboard = UIStoryboard(name: "Main", bundle: nil)
-//
-//            let first = storyboard.instantiateViewControllerWithIdentifier("StagesTableViewController") as! StagesTableViewController
-//            let second = storyboard.instantiateViewControllerWithIdentifier("WorkoutTableViewController") as! WorkoutTableViewController
-////
-//            tabBarController.viewControllers = [first, second]
-//        }
-        return true
-    }
+        let defaults = NSUserDefaults.standardUserDefaults()
+        let stage = defaults.integerForKey(NSUserDefaultsKeys.Stage.rawValue)
 
+        if stage == 0 {
+            self.window = UIWindow(frame: UIScreen.mainScreen().bounds)
+
+            let storyboard = UIStoryboard(name: "Main", bundle: nil)
+
+            let initialViewController = storyboard.instantiateViewControllerWithIdentifier("InitialController") as! UINavigationController
+            self.window?.rootViewController = initialViewController
+            self.window?.makeKeyAndVisible()
+        }
+        
+        
+        return true
+    }    
+    
     func applicationWillResignActive(application: UIApplication) {
         // Sent when the application is about to move from active to inactive state. This can occur for certain types of temporary interruptions (such as an incoming phone call or SMS message) or when the user quits the application and it begins the transition to the background state.
         // Use this method to pause ongoing tasks, disable timers, and throttle down OpenGL ES frame rates. Games should use this method to pause the game.

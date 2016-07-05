@@ -23,10 +23,8 @@ class WorkoutTableViewController: UITableViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
         currentProgram = loadProgramForStage()
-
-       }
+    }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
